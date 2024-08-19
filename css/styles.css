@@ -1,0 +1,560 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/*--Header/logo Title-------------------------------------------------------------------------------------*/
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background-image: url(uve-sanchez-9DRX_cW48RQ-unsplash.jpg);
+
+  background-size: cover;
+  background-position: 35%;
+}
+
+.roller {
+  height: 4rem;
+  /*unit of measurement that's based on the font size of the root element, 4keer de font grootte*/
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2d572f;
+
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    top: -4rem;
+  }
+
+  50% {
+    top: -8rem;
+  }
+
+  75% {
+    top: -12rem;
+  }
+}
+
+.header h1 {
+  font-size: 60px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*--Style the top navigation bar-------------------------------------------------------------------------------------*/
+
+.navbarproject {
+  background-color: var(--bg-color-nav);
+  position: fixed;
+  /*navigation bar vast zetten*/
+  width: 100%;
+  z-index: 100;
+}
+
+.navbarproject a,
+.navbarproject b,
+.navbar a,
+.navbar b {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  /*geen link lijn*/
+  font-size: 15px;
+}
+
+.navbarproject b {
+  padding: 5px 5px;
+}
+
+.navbarproject a {
+  padding: 14px 20px;
+}
+
+.navbarproject a {
+  float: right;
+}
+
+.navbarproject b {
+  float: left;
+}
+
+/*b is voor light and darkmode*/
+
+.navbarproject a:hover,
+.navbarproject b:hover {
+  background-color: rgb(93, 123, 84, 0.7);
+}
+
+.navbarproject a:active,
+.navbarproject b:active {
+  background-color: rgb(255, 255, 255, 0.5);
+  color: black;
+}
+
+/*--verbergt de dark mode----------------------------------------------------------------------*/
+#light-image {
+  display: none;
+  height: 34px
+}
+
+#dark-image {
+  height: 34px
+}
+
+/*--Column container----------------------------------------------------------------------*/
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+
+:root {
+  --bg-color-side: rgb(50, 50, 50);
+  --bg-color-main: rgb(70, 70, 70);
+  --bg-color-row: rgb(255, 255, 255);
+  --bg-color-nav: rgb(0, 0, 0);
+  --text-color: rgb(255, 255, 255);
+}
+
+.dark-mode {
+  --bg-color-side: rgb(50, 50, 50);
+  --bg-color-main: rgb(70, 70, 70);
+  --text-color: rgb(255, 255, 255);
+  --bg-color-nav: rgb(0, 0, 0);
+  --bg-color-row: rgb(255, 255, 255);
+  --bg-color-maze: rgb(150, 150, 150);
+}
+
+.light-mode {
+  --bg-color-side: rgb(200, 200, 200);
+  --bg-color-main: rgb(255, 255, 255);
+  --bg-color-row: rgb(230, 230, 230);
+  --bg-color-nav: rgb(100, 100, 100);
+  --text-color: black;
+  --bg-color-maze: rgb(255, 255, 255);
+}
+
+.side,
+.sideproject {
+  flex: 20%;
+  background-color: var(--bg-color-side);
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.side p,
+.sideproject p {
+  font-size: 15px;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+.main {
+  flex: 75%;
+  color: var(--text-color);
+  background-color: var(--bg-color-main);
+  padding: 20px 30px 100px;
+  font-size: 15px;
+}
+
+.maintext {
+  float: left;
+  width: 80%;
+  padding: 10px;
+  /*color: white;*/
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+.profielfoto {
+  width: 100%;
+  padding: 0px;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.profielfoto:hover {
+  transform: translatex(17%) scale(130%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*----zijkant bij school en werk ervaring-----------------------------------------------------------------------------------*/
+
+.icons {
+  height: 20px;
+  width: 20px;
+  padding: 0px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.icons:hover {
+  transform: translatex(150%) scale(300%);
+}
+
+/*----staat ondere de projecten-----------------------------------------------------------------------------------*/
+
+.footer {
+  overflow: hidden;
+  background-color: var(--bg-color-nav);
+  width: 100%;
+}
+
+.footer a {
+  float: center;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: wavy;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.footer p {
+  color: white;
+  padding: 4px;
+  text-align: center;
+  font-weight: bolder;
+
+}
+
+.footer a:hover {
+  background-color: #5f8056;
+  color: black;
+}
+
+.footer a:active {
+  background-color: #ffffff;
+  color: black;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.projectcontainer {
+  /*plaats voor foto project*/
+  position: relative;
+  width: 93%;
+  height: 100%;
+  margin: 3.4%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.projectcontainer:hover {
+  transform: scale(1.10);
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+  /*overlay als je erover hovert*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+  font-size: 40px;
+  padding: 20px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+
+}
+
+.projectcontainer:hover .overlay {
+  opacity: 1;
+}
+
+.scholen:hover {
+  transform: scale(110%) translatex(2%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+.project {
+  /*letterlijke container waar alles instaat vaan main projecten*/
+  width: 100%;
+}
+
+/*3 rows op de home pagina onder intro en 1 in random projts*/
+.projectrow2,
+.projectrow3 {
+  width: 49%;
+  border-radius: 10px;
+  background-color: var(--bg-color-row);
+  align-items: center;
+  padding: 3px;
+}
+
+/*witregel die kan gecntrl worden*/
+.projectrowtussen {
+  width: 2%;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.projectrow2 {
+  float: left;
+}
+
+.projectrow3 {
+  float: right;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/* waarin projcten komen bij de random projecten*/
+
+.random1deel {
+  float: center;
+  margin: 1%;
+  width: 600px;
+  ;
+  border-radius: 10px;
+  background-color: var(--bg-color-row);
+  padding: 20px;
+  color: black;
+  text-align: center;
+
+}
+
+
+/* voor de duwbare box bij werk ervaring */
+.box {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.box:hover {
+  background-color: rgb(50, 100, 50);
+  ;
+}
+
+
+
+#mazeContainer {
+  top: 15px;
+  opacity: 0;
+  display: inline-block;
+  margin: auto;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+#mazeContainer #mazeCanvas {
+  margin: 15px;
+  display: block;
+  border: solid 5px var(--bg-color-side);
+  height: calc(100vh - 150px);
+}
+
+input,
+select {
+  cursor: pointer;
+  background-color: var(--bg-color-side);
+  height: 35px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: var(--text-color);
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  appearance: none;
+}
+
+input:hover,
+select:hover {
+  background-color: rgba(0, 0, 0, 0.70);
+}
+
+input:active,
+select:active {
+  background-color: black;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.custom-select {
+  display: inline-block;
+}
+
+.custom-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: 125px center;
+}
+
+#Message-Container {
+  visibility: hidden;
+  color: white;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.70);
+  z-index: 1;
+}
+
+#Message-Container #message {
+  width: 70vh;
+  height: 70vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+#page {
+  background-color: var(--bg-color-maze);
+  background-image: url(walle-background.jpg);
+  background-size: cover;
+  background-position: 35%;
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+#page #menu {
+  margin: 0;
+  height: calc(100vh - 54px);
+}
+
+#page #menu h1 {
+  margin: 0;
+  margin-bottom: 1px;
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+
+#page #view {
+  position: absolute;
+  top: 105px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.border {
+  border: 10px black;
+  border-radius: 10px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .side,
+  .sideproject,
+  .footer,
+  .maintext {
+    max-width: 100%;
+  }
+
+
+  .navbarproject a {
+    padding: 14px 10px;
+  }
+
+  .random1deel {
+    width: 90vw;
+  }
+
+  .overlay {
+    font-size: 20px;
+  }
+
+  #Message-Container #message {
+    width: 70vw;
+    height: auto;
+    position: fixed;
+    transform: translate(-50%, -50%);
+
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  #mazeContainer #mazeCanvas {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+
+
+}
