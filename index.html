@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><!--initaileseren en linken bibs-->
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+    <!--er wordt een class aangemaakt navbarproject. door $(document).ready(function () { ... }); 
+        wordt een project geladen (navbar),wnr  DOM (Document Object Model) klaar is, in navbarproject-->
+
+    <div class="navbarproject"><!--ga naar -->
+        <script>$(function () { $(".navbarproject").load("navbar.html"); });</script>
+    </div>
+
+    <div class="header">
+        <p><br></p><img src="img/eigen logo.png" style="width:90vh;">
+        <h1>Product Designer <div class="roller">
+                <span id="rolltext">
+                    Sustainable design<br/>
+                    Electronics<br/>
+                    Photography<br/>
+                    Minimalism<br/>
+            </div>
+        </h1>
+
+    </div>
+
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <img class="profielfoto" style="height:250px;" src="img/Ward_Sabbe.jpg">
+            <p>Hey, I'm Ward. An industrial product desginer graduated at Howest 2022.
+                Now I am studying for my masters degree in Industrial Design at Ugent, campus Kortrijk. </p>
+        </div>
+
+        <div class="main">
+
+            <div class="maintext">
+                <h2>Who is Ward?</h2>
+                <!--<h5>Title description, feb 21, 2023</h5>
+                    <div class="fakeimg" style="height:200px;">Image</div>-->
+
+                <p> Meet Ward, 
+                    a young designer whose passion for design extends beyond traditional boundaries. 
+                    With a specialization in lighting design, Ward has always been intrigued by the 
+                    transformative power of light and its ability to shape environments and evoke emotions.
+                    <br><br>
+                    In addition to his expertise in lighting design, Ward is deeply fascinated by 
+                    stem-based applications, particularly in the area of Arduino and similar technologies. 
+                    He sees the potential of these technologies to seamlessly integrate with design, enriching 
+                    user experiences in innovative ways.
+                    <br><br>
+                    Ward's innovative approach extends beyond conventional practices. Drawing from his hands-on 
+                    experience with Arduino, he not only crafts captivating lighting installations but also leads 
+                    stem-focused workshops and develops kits tailored for diverse spaces. His collaborative 
+                    mindset and unwavering drive to innovate make him an invaluable asset in projects that demand a 
+                    harmonious blend of design and technology.
+                    <br><br>
+                    In summary, Ward is a multifaceted designer with a relentless passion for both lighting design 
+                    and stem-based applications. His ability to seamlessly integrate technology with design, coupled
+                    with his dedication to pushing creative boundaries, positions him as a dynamic force in the design industry.
+                    <br><br>
+                    [chat-GPT]
+                    <br><br><br><br>
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <div class="projectrow2">
+                    <div class="projectcontainer">
+                        <img src="img/school.jpg">
+                        <a href="school.html">
+                            <div class="overlay">
+                                <p>Education</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="projectcontainer">
+                        <img src="img/DWave.jpg">
+                        <a href="Random_Projecten.html">
+                            <div class="overlay">
+                                <p>Random Projects</p>
+                            </div>
+                    </div></a>
+
+                    <div class="projectcontainer">
+                        <img src="img/klok40.jpg"></a>
+                        <a href="klok.html">
+                            <div class="overlay">
+                                <p>Arloize</p>
+                            </div>
+                    </div></a>
+
+                    <div class="projectcontainer">
+                        <img src="img/lens_2.jpg">
+                        <a href="lens.html">
+                            <div class="overlay">
+                                <p>Contact Lens Container</p>
+                            </div>
+                    </div></a>
+
+                    <div class="projectcontainer">
+                        <img src="img/retrogame00.png">
+                        <a href="retrogame.html">
+                            <div class="overlay">
+                                <p>Retro Game</p>
+                            </div>
+                    </div></a>
+
+                    <div class="projectcontainer">
+                        <img src="img/bbq_14.png">
+                        <a href="bbq.html">
+                            <div class="overlay">
+                                <p>Sheet Metal Bbq</p>
+                            </div>
+                    </div></a>
+                </div>
+
+                <div class="projectrowtussen">
+                </div>
+
+                <div class="projectrow3">
+
+                    <div class="projectcontainer">
+                        <img src="img/work.jpg">
+                        <a href="work.html">
+                            <div class="overlay">
+                                <p>Work Experience</p>
+                            </div>
+                    </div></a>
+
+                    <div class="projectcontainer">
+                        <img src="img/bap_03.jpg">
+                        <a href="bap.html">
+                            <div class="overlay">
+                                <p>Bachelor Thesis</p>
+                            </div>
+                    </div></a>
+
+                    <div class="projectcontainer">
+                        <img src="img/dieter_rams00.jpg">
+                        <a href="comingsoon.html">
+                            <div class="overlay">
+                                <p>Coming Soon!</p>
+                            </div>
+                    </div></a>
+
+                    <div class="projectcontainer">
+                        <img src="img/lichtbox00.jpg">
+                        <a href="lichtbox.html">
+                            <div class="overlay">
+                                
+                                <p>Lightbox</p>
+                            </div>
+                    </div></a>
+
+                    <div class="projectcontainer">
+                        <img src="img/id00.png">
+                        <a href="comingsoon.html">
+                            <div class="overlay">
+                                <p>Coming Soon!</p>
+                            </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!--footer------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="footer">
+        <script>$(function () { $(".footer").load("footer.html"); });</script>
+    </div>
+
+    <div>
+        <script src="toggle.js"></script>
+</body>
+
+</html>
+
+ <!--class is voor meerdere elementen en meestal om rijen en colommen te stijlem, id wordt gebruikt om 1 specifiek elemmnt te manipuleren en heeft ook voorang------------------------------------------------------------------------------------------------------------------------------------------->
+
